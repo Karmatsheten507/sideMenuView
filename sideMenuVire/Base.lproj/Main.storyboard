@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wsn-EQ-mLb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Navigation Controller-->
+        <scene sceneID="8bR-Yi-bcY">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v0x-yB-KEd" customClass="MainNavigationController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PVd-jJ-Sav">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HzI-t7-lxk" kind="relationship" relationship="rootViewController" id="vdK-a0-yGj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNZ-R8-UqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1581" y="-275"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xvx-bT-1TM">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wsn-EQ-mLb" customClass="ViewController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CMp-4R-9xo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgG-wp-gQj">
+                                <rect key="frame" x="81" y="252" width="212" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="391-N5-Lkp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="Wsn-EQ-mLb" eventType="touchUpInside" id="4YI-ms-AgM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.485227238345742" green="1" blue="0.66929874974544101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L8Y-uH-0u5" firstAttribute="trailing" secondItem="YgG-wp-gQj" secondAttribute="trailing" constant="81.5" id="J16-jw-FoZ"/>
+                            <constraint firstItem="YgG-wp-gQj" firstAttribute="leading" secondItem="L8Y-uH-0u5" secondAttribute="leading" constant="81.5" id="RLk-FC-z6D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L8Y-uH-0u5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="545-Lv-QGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2303.1999999999998" y="-276.61169415292358"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="3xk-FX-fy5">
+            <objects>
+                <viewController storyboardIdentifier="SwitchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HzI-t7-lxk" customClass="SwitchViewController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rD6-np-zJF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you Hungry ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-c6-PRA">
+                                <rect key="frame" x="16" y="141" width="343" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soF-nr-Ov2">
+                                <rect key="frame" x="157" y="229" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch:" destination="HzI-t7-lxk" eventType="valueChanged" id="gb4-uH-zf0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes! I am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-aN-kcH">
+                                <rect key="frame" x="52" y="314" width="271" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-o3-BXn">
+                                <rect key="frame" x="151" y="521" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DatePick"/>
+                                <connections>
+                                    <segue destination="qpJ-q6-jB1" kind="show" id="7eV-fL-avN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43882542730000001" blue="0.25837850810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Cpy-Ly-0B2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="4E2-56-7Jx">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5ku-sP-3yz"/>
+                        <barButtonItem key="rightBarButtonItem" title="exit" id="SHc-de-gFM">
+                            <connections>
+                                <action selector="exit:" destination="HzI-t7-lxk" id="auG-ib-cHb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answer" destination="SYb-aN-kcH" id="cnO-gg-cv5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFl-aY-Wmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-792.79999999999995" y="-269.41529235382313"/>
+        </scene>
+        <!--Date Picker-->
+        <scene sceneID="mmt-IO-wDJ">
+            <objects>
+                <viewController title="Date Picker" id="qpJ-q6-jB1" customClass="DateViewController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="70b-kh-Gkn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="F4j-lI-keD">
+                                <rect key="frame" x="8" y="113" width="351" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="T5w-dC-vqN"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="548738818.39207399">
+                                    <!--2018-05-23 03:26:58 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-wa-TiY">
+                                <rect key="frame" x="70" y="314" width="202" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-4C-zuk">
+                                <rect key="frame" x="16" y="393" width="343" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Get Date"/>
+                                <connections>
+                                    <action selector="dateButton:" destination="qpJ-q6-jB1" eventType="touchUpInside" id="aGM-wK-6Gg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-KQ-1Yv">
+                                <rect key="frame" x="140" y="523" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Picker View"/>
+                                <connections>
+                                    <segue destination="r2t-tM-Pp9" kind="show" id="1MI-vU-1Ft"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43159848379999999" blue="0.6352109198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F4j-lI-keD" firstAttribute="trailing" secondItem="Gdw-4C-zuk" secondAttribute="trailing" id="0ei-xS-B11"/>
+                            <constraint firstItem="F4j-lI-keD" firstAttribute="leading" secondItem="nEZ-O6-Qcf" secondAttribute="leading" constant="8" id="Bdr-cL-Y0X"/>
+                            <constraint firstItem="F4j-lI-keD" firstAttribute="trailing" secondItem="70b-kh-Gkn" secondAttribute="trailingMargin" id="RgX-eb-dNY"/>
+                            <constraint firstItem="F4j-lI-keD" firstAttribute="top" secondItem="nEZ-O6-Qcf" secondAttribute="top" constant="49" id="VH9-Yp-03E"/>
+                            <constraint firstItem="EVE-wa-TiY" firstAttribute="top" secondItem="F4j-lI-keD" secondAttribute="bottom" constant="39" id="bFL-km-czq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nEZ-O6-Qcf"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="F4j-lI-keD" id="tvw-bq-xLb"/>
+                        <outlet property="dateLabel" destination="EVE-wa-TiY" id="Dr3-8V-Sj5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="No5-ol-2TZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="-269.41529235382313"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="cD6-nf-XJa">
+            <objects>
+                <viewController id="r2t-tM-Pp9" customClass="PickerViewController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eh7-aG-EYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmq-b6-DTg">
+                                <rect key="frame" x="0.0" y="72" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="r2t-tM-Pp9" id="XcF-pK-vrv"/>
+                                    <outlet property="delegate" destination="r2t-tM-Pp9" id="sLT-NZ-Edf"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9l-cG-9oz">
+                                <rect key="frame" x="16" y="272" width="343" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME8-7c-0nv">
+                                <rect key="frame" x="134" y="471" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Segment "/>
+                                <connections>
+                                    <segue destination="GQ4-c1-bKI" kind="show" id="dLL-NV-hTc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="bjq-J5-SmS"/>
+                    </view>
+                    <connections>
+                        <outlet property="lable" destination="Q9l-cG-9oz" id="6Gp-Tp-eEF"/>
+                        <outlet property="picker" destination="Kmq-b6-DTg" id="Le0-Cu-1f5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEB-D0-6rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="-269.41529235382313"/>
+        </scene>
+        <!--Segmented View Controller-->
+        <scene sceneID="Jhs-M3-4W5">
+            <objects>
+                <viewController id="GQ4-c1-bKI" customClass="SegmentedViewController" customModule="sideMenuVire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0i-yM-rTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-hc-reU">
+                                <rect key="frame" x="16" y="116" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment2:" destination="GQ4-c1-bKI" eventType="valueChanged" id="sxZ-vX-MHf"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9d-L7-FKa">
+                                <rect key="frame" x="58" y="-2" width="259" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="TC9-JA-LJ7"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="E9d-L7-FKa" id="rqS-tD-Zkv"/>
+                        <outlet property="segment1" destination="t6x-hc-reU" id="MMs-OZ-j0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udu-wG-51j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5999999999999" y="-269.41529235382313"/>
+        </scene>
+    </scenes>
+</document>
